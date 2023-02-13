@@ -1,0 +1,57 @@
+body{
+    /* font-size: 13px !important; */
+    background: white !important;
+}
+
+/** Login ***/
+.invalid-feedback {
+    font-size: 100% !important;
+    color: #e3342f;
+}
+
+#login-form {
+    margin:5em auto 2em auto;
+    padding:20px;
+    width:340px;
+    border:1px solid #FDBF3B;
+    background-color:#FFEBC1;
+    border-radius:4px;
+    box-sizing: border-box;
+    font-size: 12px !important;
+}
+
+#login-form label {
+    display:block;
+    margin-bottom:5px;
+    color: #424040;
+}
+#login-form input[type=text], #login-form input[type=password] {
+    border:1px solid #ccc;
+    border-radius:3px;
+    margin-bottom:15px;
+    padding:7px;
+    display:block;
+    width:100%;
+    box-sizing: border-box;
+    height: 32px;
+}
+
+#login-form label {
+    font-weight:bold;
+}
+#login-form label[for=autologin] {
+    font-weight:normal;
+}
+#login-form a.lost_password {
+    float:right;
+    font-weight:normal;
+}
+#login-form input#openid_url {
+    background:#fff url(../images/openid-bg.gif) no-repeat 4px 50%;
+    padding-left:24px !important;
+}
+#login-form input#login-submit {
+    margin-top:15px;
+    padding:7px; display:block;
+    width:100%;
+    box-sizing: border-box;}

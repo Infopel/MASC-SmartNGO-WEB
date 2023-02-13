@@ -1,0 +1,62 @@
+<template>
+    <div>
+        <!-- Modal -->
+        <div class="modal fade text-capitalize" id="usersModal" tabindex="-1" role="dialog" aria-labelledby="usersModalCenter" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <form @submit.prevent="submit" method="POST">
+                        <div class="modal-header p-2 pl-4 pr-4">
+                            <h5 class="modal-title uppercase" id="exampleModalCenterTitle">{{ __('lang.label_user_new') }}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div v-if="loading" class="bg-light p-2">
+                                Caregando Dados...
+                            </div>
+                            <div v-if="!loading" class="bg-light p-2">
+                                <div class="users">
+                                    <div class="objects-selection">
+                                        <label v-for="(user, key) in users" :key="key" class="mb-0">
+                                            <input type="checkbox" name="user_ids[]" v-model="user_ids[user.id]"> {{ user.full_name }}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer p-1">
+                            <button type="submit">{{ __('lang.button_add') }}</button>
+                            <button type="button"  data-dismiss="modal">{{ __('lang.button_cancel') }}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+    import Vue from 'vue'
+
+    export default Vue.extend({
+        props:[
+            'users',
+            'usersEndpoint',
+            'actionendpoint'
+        ],
+        data() {
+            return {
+                loading: true,
+                users: [],
+                user_ids: {},
+                errors: [],
+                actionEndPoint: this.actionendpoint
+            }
+        },
+    })
+</script>
+
+<style scoped>
+
+</style>

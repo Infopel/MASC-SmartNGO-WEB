@@ -1,0 +1,38 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    },
+    "devDependencies": {
+        "axios": "^0.27.2",
+        "bootstrap": "^4.5.0",
+        "cross-env": "^5.1",
+        "jquery": "^3.5.1",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.20",
+        "popper.js": "^1.16.1",
+        "prettier": "^2.7.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.26.8",
+        "sass-loader": "7.*",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11",
+        "vue2-editor": "^1.0.1"
+    },
+    "dependencies": {
+        "anychart": "^8.8.0",
+        "bootstrap-vue": "^2.15.0",
+        "c3": "^0.7.15",
+        "d3-time-format": "^2.2.3",
+        "dhtmlx-gantt": "^6.3.7",
+        "vue-c3": "^1.2.11",
+        "vue-simple-calendar": "^4.4.0"
+    }
+}

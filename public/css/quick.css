@@ -1,0 +1,141 @@
+.quick-bubble.show {
+    display: -webkit-box;
+    display: flex;
+}
+
+.quick-bubble {
+    position: fixed;
+    z-index: 101;
+    bottom: 94px;
+    right: 24px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: none;
+    box-shadow: 0 4px 8px rgba(81, 107, 152, 0.24);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.quick-bubble .quick-bubble-button {
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    z-index: 2;
+    border: 2px solid #d3d4d9;
+    border-radius: 50%;
+}
+
+.quick-painel {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: _vye31;
+    animation-name: _vye31;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+    animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+#quick-wrapper ._1kydm._h9ior._h8fiz {
+    /* -webkit-animation-name: _vye31; */
+    animation-name: _vye31;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+    animation-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+#quick-wrapper ._1kydm._h9ior._h8fiz {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+._1kydm._h9ior {
+    right: 15px;
+}
+
+#quick-wrapper ._1kydm {
+    height: 550px;
+    max-height: 90%;
+    max-width: 90%;
+    top: auto;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+#quick-wrapper ._iw3lm {
+    z-index: 2147483000;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    max-width: 100%;
+    overflow: hidden;
+    font-family: "elevio-noto-sans", Helvetica, Arial, sans-serif;
+    box-shadow: -3px 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+#quick-wrapper .main-container {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#quick-wrapper .inner-content {
+    background-color: #fff;
+    position: relative;
+    -webkit-perspective: 0;
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+    height: 200px;
+}
+
+/* Custom Scrollbar using CSS */
+.custom-scrollbar-css {
+    overflow-y: scroll;
+}
+
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #999999;
+    background-image: #999999;
+    /* background-image: linear-gradient(to top, #00d2ff 0%, #3a7bd5 100%); */
+}
