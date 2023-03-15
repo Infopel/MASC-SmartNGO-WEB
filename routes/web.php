@@ -893,4 +893,18 @@ Route::group(['middleware' => ['auth:web'], 'prefix' => '/'], function () {
     //     return $approveModels;
     // });
 
+    /// iniciativas
+    Route::group(['prefix' => 'iniciativas'], function () {
+        Route::livewire('/', 'iniciativas')->layout('layouts.main', ['title' => 'Iniciativas'])->name('iniciativas');
+        
+    });
+    // Route::group(['prefix' => 'iniciativas'], function () {
+    //     Route::get('/', 'IniciativasController@index')->name('iniciativas.index');
+    //     Route::get('/edit/{iniciativa}', 'IniciativasController@edit')->name('iniciativas.edit');
+    //     Route::post('/edit/{iniciativa}', 'IniciativasController@update')->name('iniciativas.update');
+    //     Route::post('/delete/{id}', 'IniciativasController@destroy')->name('iniciativas.destroy');
+        // Route::post('/delete/{id}', 'IniciativasController@destroy')->name('iniciativas.remove');
+    // });
+    // Route::get('iniciativas', 'IniciativasController@index')->name('iniciativas');
+
 });

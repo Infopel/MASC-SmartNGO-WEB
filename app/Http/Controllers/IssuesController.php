@@ -462,8 +462,8 @@ class IssuesController extends Controller
             if ($th->getCode() == 10701) {
                 return back()->with('error', $th->getMessage());
             }
-            return back()->with('error', 'Ocorreu um erro ao gravar os dados! RF007x0001 Validação de dados / cadastro da issue. <br><b>Detailhes do Erro</b>: ' . $th->getMessage());
-            // throw $th;
+            // return back()->with('error', 'Ocorreu um erro ao gravar os dados! RF007x0001 Validação de dados / cadastro da issue. <br><b>Detailhes do Erro</b>: ' . $th->getMessage());
+            throw $th;
         }
     }
 

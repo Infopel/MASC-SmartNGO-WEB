@@ -78,12 +78,12 @@ class Iniciativa extends Model
 		'updatedOn',
 		'removedOn',
 		'createdBy',
-		'tipoIniciativa',
+		'tipoIniciativa', //filtrar por tipos de iniciativa
 		'updatedBy',
 		'removedBy',
 		'latitude',
 		'longitude',
-		'project_id'
+		'project_id' //nomedoprojecto (select)
 	];
 
 	public function localizacao()

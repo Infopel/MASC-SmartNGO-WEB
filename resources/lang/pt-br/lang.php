@@ -1169,6 +1169,7 @@ return [
 
 	'label_question' => 'Pergunta',
 	'label_question_plurar' => 'Perguntas',
+	'label_initiative_plural' => 'Iniciativas',
 
 	'label_partner_plural' => "Parceiros",
 	'label_partner' => "Parceiro",

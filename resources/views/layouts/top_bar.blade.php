@@ -26,6 +26,12 @@
                 </a>
             </li>
             <li>
+                <a class="top-bar-link" href="{{ route('iniciativas') }}">
+                    <i class="icon-brain text-danger"></i>
+                    <span>{{ __('lang.label_initiative_plural') }}</span>
+                </a>
+            </li>
+            <li>
                 <a class="top-bar-link" href="{{ route('programs.index') }}">
                     <i class="icon-books"></i>
                     <span>{{ __('lang.label_program_plural') }}</span>
